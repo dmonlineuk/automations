@@ -30,6 +30,6 @@ if [ "$CFIP" != "$myip" ] && [ -n "$myip" ]; then
     -H "Authorization: Bearer $CF_API_TOKEN" \
     -H "Content-Type: application/json" \
     "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records/$RECORD_ID" \
-    --data "{\"type\":\"A\",\"name\":\"$myhostname\",\"content\":\"$myip\",\"ttl\":120,\"proxied\":true}")
+    --data "{\"type\":\"A\",\"name\":\"$myhostname\",\"content\":\"$myip\",\"ttl\":120,\"proxied\":false}")
 fi
 
