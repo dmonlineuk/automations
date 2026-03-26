@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source .env
+source /home/dan/projects/automations/dynamicdns/.env
+
 
 mydomain=$MYDOMAIN
 myhostname=$MYHOST
