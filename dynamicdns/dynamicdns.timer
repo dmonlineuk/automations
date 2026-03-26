@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the dynamic dns script every hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

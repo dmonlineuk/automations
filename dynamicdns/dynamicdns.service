@@ -1,0 +1,6 @@
+[Unit]
+Description=Runs a bash script that checks then updates external IP address information on Cloudflare's name servers
+
+[Service]
+Type=oneshot
+ExecStart=/home/dan/projects/automations/dynamicdns.sh
