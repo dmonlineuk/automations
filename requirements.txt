@@ -1,0 +1,8 @@
+vim
+git
+openssl
+jq
+tmux
+iputils-ping
+speedtest-cli
+
