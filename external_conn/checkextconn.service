@@ -1,0 +1,6 @@
+[Unit]
+Description=Runs a bash script that checks for connectivity to the outside world e.g. internet; and checks speeds
+
+[Service]
+Type=oneshot
+ExecStart=/home/dan/projects/automations/external_conn/checkextconn.sh

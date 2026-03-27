@@ -21,3 +21,9 @@ This will contain stuff designed to run in the home automations machine.
   - `journalctl -u dynamicdns.service`
 5. Check the logs from the script's internal code using `journalctl -t dynamicdns`
 
+## External Connectivity Checks
+
+Uses speedtest cli (ookla) to check internet access and speed. Sends results to user.info with tag 'connectivity'
+
+  - `journalctl -t connectivity`
+
