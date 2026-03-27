@@ -2,6 +2,14 @@
 
 This will contain stuff designed to run in the home automations machine.
 
+# Setup
+
+Will need to install required packages. Use the following:
+
+  - `sudo apt install $(cat requirements.txt)`
+
+For automated scripts, the .service and .timer files should be copied to /etc/systemd/system/ but check the contents of these as the paths should be absolute and will not be reflective of the actual location of the repo and scripts.
+
 ## Dynamic DNS
 
 1. Create the secrets as required. I follow the `suiss cheese` model; I understand my key file used for encryption is still in the clear, however I do like giving bad actors as many layers to go through as I can to get to the secrets.
