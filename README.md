@@ -25,5 +25,16 @@ This will contain stuff designed to run in the home automations machine.
 
 Uses speedtest cli (ookla) to check internet access and speed. Sends results to user.info with tag 'connectivity'
 
-  - `journalctl -t connectivity`
+1. Copy and edit the service and timer files into /etc/systemd/system/
+2. Enable timer and review logs
+  - Enable
+  - `sudo systemctl daemon-reload`
+  - `sudo systemctl enable --now checkextconn.timer`
+
+  - Check
+  - `systemctl status checkextconn.timer`
+
+  - Review logs
+  - `journalctl -u checkextconn.service`
+3. Check the logs from the script's internal code using `journalctl -t connectivity`
 
