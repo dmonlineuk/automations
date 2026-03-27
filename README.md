@@ -31,7 +31,7 @@ For automated scripts, the .service and .timer files should be copied to /etc/sy
 
 ## External Connectivity Checks
 
-Uses speedtest cli (ookla) to check internet access and speed. Sends results to user.info with tag 'connectivity'
+Uses ping, getent and speedtest-cli (ookla) to check internet access and speed. Sends results to user.info with tag 'connectivity'
 
 1. Copy and edit the service and timer files into /etc/systemd/system/
 2. Enable timer and review logs
