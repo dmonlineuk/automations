@@ -17,7 +17,7 @@ fi
 
 # Speed Test
 if command -v speedtest-cli >/dev/null 2>&1; then
-	logger -p user.info -t connectivity $(speedtest-cli --simple)
+	logger -p user.info -t connectivity $(speedtest-cli --simple --secure)
 else
 	logger -p user.info -t connectivity "Speed test skipped (speedtest-cli not available)"
 fi
